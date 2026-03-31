@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 1 - Apoyo Informática | Resumen</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(145deg, #f6f9fc 0%, #eef2f5 100%);
+            color: #1a2c3e;
+            line-height: 1.5;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 2rem;
+            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+
+        /* Header */
+        .header {
+            background: #0a2b3e;
+            padding: 2rem 2rem 1.5rem 2rem;
+            color: white;
+            border-bottom: 4px solid #3b9eff;
+        }
+
+        .header h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            margin-bottom: 0.5rem;
+        }
+
+        .header .sub {
+            font-size: 1rem;
+            opacity: 0.85;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .badge {
+            background: #2c5a74;
+            padding: 0.3rem 1rem;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* contenido principal */
+        .content {
+            padding: 2rem 2rem 2rem 2rem;
+        }
+
+        /* tarjetas y secciones */
+        .section {
+            margin-bottom: 2.5rem;
+            border-radius: 1.2rem;
+            background: #ffffff;
+            transition: all 0.1s ease;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 600;
+            border-left: 5px solid #3b9eff;
+            padding-left: 1rem;
+            margin-bottom: 1.2rem;
+            color: #0a2b3e;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .concept-card {
+            background: #f9fafc;
+            border-radius: 1.2rem;
+            padding: 1.2rem 1.3rem;
+            border: 1px solid #e4e9f0;
+            transition: all 0.2s;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+        }
+
+        .concept-card:hover {
+            border-color: #cbdbe0;
+            background: white;
+            box-shadow: 0 8px 18px -8px rgba(0, 0, 0, 0.08);
+        }
+
+        .concept-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1e4a6e;
+            margin-bottom: 0.75rem;
+            border-bottom: 2px dotted #cbdbe0;
+            display: inline-block;
+        }
+
+        .concept-desc {
+            color: #2c3f4f;
+            margin-top: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .code-badge {
+            background: #eef2fa;
+            font-family: 'SF Mono', 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 0.6rem;
+            color: #1f6392;
+        }
+
+        .practice-block {
+            background: #f1f6fd;
+            border-left: 4px solid #3b9eff;
+            padding: 1rem 1.4rem;
+            border-radius: 1rem;
+            margin: 1.2rem 0;
+        }
+
+        .highlight {
+            background: #eef2ff;
+            font-weight: 500;
+            padding: 0.1rem 0.2rem;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+
+        hr {
+            margin: 1rem 0;
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, #dce3ec, transparent);
+        }
+
+        footer {
+            background: #f4f7fb;
+            padding: 1.2rem 2rem;
+            text-align: center;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.85rem;
+            color: #4a627a;
+        }
+
+        @media (max-width: 640px) {
+            .content {
+                padding: 1.2rem;
+            }
+            .header h1 {
+                font-size: 1.6rem;
+            }
+            .section-title {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>📘 Apoyo Informática · Sesión 1</h1>
+        <div class="sub">
+            <span>👨‍💻 Con tu sobrino · 2º Bachillerato → Ciclo Medio Microinformática y Redes</span>
+            <span class="badge">📅 Hoy · Primera sesión</span>
+        </div>
+        <p style="margin-top: 0.8rem; opacity: 0.9;">Repaso de prácticas, despliegue web, fundamentos clave y ruta para seguir avanzando</p>
+    </div>
+
+    <div class="content">
+        <!-- 1. Resumen de lo tratado -->
+        <div class="section">
+            <div class="section-title">📌 Resumen de la sesión</div>
+            <div class="practice-block">
+                <p>✅ <strong>Presentación del ciclo medio:</strong> repasamos las asignaturas del título de <strong>Microinformática y Redes</strong>. Me las llevo para preparar ejercicios adelantados.</p>
+                <p>✅ <strong>Análisis de la web "Cine":</strong> vimos una web con cartelera, compra de películas y panel admin. Detectamos que el historial de compra se guardaba en <strong>localStorage</strong> del navegador, pero las películas nuevas añadidas desde el admin <strong>no persistían</strong> (solo se modificaba el HTML en memoria).</p>
+                <p>✅ <strong>Estructura web:</strong> identificamos las tres partes principales: <strong>CSS (estilos)</strong> dentro de &lt;style&gt;, <strong>HTML (estructura)</strong> en el body con divs, y <strong>JavaScript (interactividad)</strong> dentro de &lt;script&gt;.</p>
+                <p>✅ <strong>Publicación con GitHub Pages:</strong> subimos la web a un repositorio en GitHub, activamos GitHub Pages y conseguimos una URL pública para compartir con toda la familia. También creamos un <strong>index.html</strong> con IA (tres botones de cuenta atrás) y vimos el retraso de ~30 segundos en la publicación.</p>
+            </div>
+        </div>
+
+        <!-- 2. Conceptos clave - versión resumida ampliada -->
+        <div class="section">
+            <div class="section-title">🧠 Conceptos fundamentales que hemos visto</div>
+            <div class="card-grid">
+                <!-- HTML local vs servidor -->
+                <div class="concept-card">
+                    <div class="concept-title">📄 Fichero HTML</div>
+                    <div class="concept-desc"><strong>En local:</strong> doble clic → el navegador renderiza el archivo, pero solo visible en tu equipo.<br>
+                    <strong>En servidor web:</strong> alojado en un servidor, accesible desde cualquier dispositivo con URL. <span class="code-badge">index.html</span> es el archivo por defecto al acceder a una carpeta.</div>
+                </div>
+                <!-- JSON / LocalStorage -->
+                <div class="concept-card">
+                    <div class="concept-title">🗃️ JSON & localStorage</div>
+                    <div class="concept-desc">En la web del cine, el <strong>historial de compras</strong> se guardaba como una estructura <strong>JSON</strong> (JavaScript Object Notation) dentro del <strong>localStorage</strong>. JSON es un formato ligero para intercambiar datos, muy usado en desarrollo web.</div>
+                </div>
+                <!-- Arrays / listas en JS -->
+                <div class="concept-card">
+                    <div class="concept-title">📋 Listas en JavaScript</div>
+                    <div class="concept-desc">En el código JS teníamos una <strong>lista (array)</strong> de películas. El script recorría esa lista y generaba dinámicamente secciones <strong>&lt;div&gt;</strong> dentro del HTML para mostrar la cartelera. Así se modifica el DOM de forma dinámica.</div>
+                </div>
+                <!-- 3 componentes -->
+                <div class="concept-card">
+                    <div class="concept-title">🎨 3 pilares de la web</div>
+                    <div class="concept-desc">
+                        • <strong>CSS (estilos):</strong> apariencia visual, colores, maquetación.<br>
+                        • <strong>HTML (estructura):</strong> etiquetas como &lt;div&gt;, &lt;h1&gt;, &lt;button&gt;.<br>
+                        • <strong>JavaScript:</strong> lógica, interactividad, modificar el HTML en tiempo real.
+                    </div>
+                </div>
+                <!-- Git y repositorio -->
+                <div class="concept-card">
+                    <div class="concept-title">🔁 Git & repositorio</div>
+                    <div class="concept-desc"><strong>Git</strong> es un sistema de control de versiones que registra los cambios en el código. Un <strong>repositorio</strong> es el lugar donde se guarda todo el historial de un proyecto. Nos ayuda a organizar y colaborar sin perder trabajo.</div>
+                </div>
+                <!-- GitHub -->
+                <div class="concept-card">
+                    <div class="concept-title">🐙 GitHub</div>
+                    <div class="concept-desc">Plataforma web que ofrece <strong>repositorios gratuitos</strong> en la nube. Permite alojar proyectos y gestionar el código con Git. Es como un "Dropbox para programadores" pero con control de versiones.</div>
+                </div>
+                <!-- GitHub Pages -->
+                <div class="concept-card">
+                    <div class="concept-title">🌐 GitHub Pages</div>
+                    <div class="concept-desc">Servicio que convierte tu repositorio en un <strong>servidor web estático</strong>. Cada vez que haces un commit, GitHub Pages despliega automáticamente los cambios y genera una URL pública como: <span class="code-badge">usuario.github.io/repo/</span></div>
+                </div>
+                <!-- commit -->
+                <div class="concept-card">
+                    <div class="concept-title">📌 Commit</div>
+                    <div class="concept-desc">En Git, un <strong>commit</strong> es una "instantánea" de los cambios realizados. Cada commit guarda una versión con un mensaje descriptivo. Es como un punto de guardado con historia.</div>
+                </div>
+                <!-- local storage extra -->
+                <div class="concept-card">
+                    <div class="concept-title">💾 localStorage</div>
+                    <div class="concept-desc">Almacenamiento persistente en el navegador (hasta 5-10 MB). Permite guardar datos aunque cierres la pestaña. Ideal para preferencias o historiales sin base de datos. En la web del cine guardaba las compras.</div>
+                </div>
+                <!-- Despliegue automático -->
+                <div class="concept-card">
+                    <div class="concept-title">⚙️ Despliegue (deploy)</div>
+                    <div class="concept-desc">Hacer que tu código pase de tu ordenador a un servidor accesible para todos. Con GitHub Pages, cada <strong>commit</strong> desencadena un despliegue automático. Vimos el pequeño retraso de ~30 segundos hasta que se actualiza la web.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Profundización práctica y ejercicios -->
+        <div class="section">
+            <div class="section-title">🛠️ Lo que hicimos paso a paso</div>
+            <div class="practice-block" style="background: #ffffff; border: 1px solid #e2edf7;">
+                <p><strong>🔹 1. Revisión del código fuente:</strong> Inspeccionamos el HTML, CSS y JS de la web del cine. Localizamos la función que añadía películas (solo modificaba el DOM, sin guardar en localStorage).</p>
+                <p><strong>🔹 2. GitHub y primer repositorio:</strong> Creamos repositorio "pruebas" desde la web de GitHub. Subimos el archivo <span class="highlight">cine.html</span> mediante la interfaz web (commit inicial).</p>
+                <p><strong>🔹 3. GitHub Pages activado:</strong> Fuimos a Settings → Pages, seleccionamos rama main y carpeta raíz. Nos dio una URL tipo <span class="highlight">https://[usuario].github.io/pruebas/cine.html</span>.</p>
+                <p><strong>🔹 4. Crear index.html con IA:</strong> Usamos ChatGPT para generar una página con tres botones (cuenta atrás 10, 30, 60 min). La guardamos como <span class="highlight">index.html</span> dentro del mismo repositorio y la subimos con nuevo commit.</p>
+                <p><strong>🔹 5. Efecto Pages + Tiempo de propagación:</strong> Comprobamos que la nueva página no estaba visible inmediatamente, sino después de ~30 segundos (tiempo que tarda GitHub Pages en reconstruir y desplegar).</p>
+                <p><strong>🔹 6. Compartir:</strong> Enviamos la URL a familiares para que accedieran desde el móvil/ordenador a la web pública del cine.</p>
+            </div>
+        </div>
+
+        <!-- 4. JSON + estructura de datos extra -->
+        <div class="section">
+            <div class="section-title">📦 JSON, listas y manipulación del DOM</div>
+            <div class="card-grid">
+                <div class="concept-card">
+                    <div class="concept-title">🧩 JSON (JavaScript Object Notation)</div>
+                    <div class="concept-desc">
+                        Formato de texto para estructurar datos. En el cine, el historial de compras tenía pinta de algo como:<br>
+                        <span class="code-badge">{"compras": [{"pelicula":"Dune", "fecha":"..."}]}</span><br>
+                        Lo guardaban en localStorage y lo recuperaban al recargar.
+                    </div>
+                </div>
+                <div class="concept-card">
+                    <div class="concept-title">🔄 Modificar HTML con JS</div>
+                    <div class="concept-desc">
+                        JavaScript puede crear nuevos elementos <span class="highlight">&lt;div&gt;</span> y añadirlos al DOM. En la web del cine, al añadir película, se generaba dinámicamente un nuevo div con los datos, pero sin persistencia. <strong>Mejora posible:</strong> guardar también en localStorage.
+                    </div>
+                </div>
+                <div class="concept-card">
+                    <div class="concept-title">🏗️ index.html: punto de entrada</div>
+                    <div class="concept-desc">
+                        Cuando un servidor web recibe una petición a una carpeta (ej: <span class="highlight">https://midominio/miweb/</span>) busca automáticamente <strong>index.html</strong>. Es la página principal por defecto. Por eso renombramos o creamos ese archivo.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. Próximos pasos y cierre -->
+        <div class="section">
+            <div class="section-title">🚀 Próximas ideas / preparación ciclo medio</div>
+            <div class="practice-block" style="background: #eaf7f0; border-left-color: #2c9e6e;">
+                <ul style="margin-left: 1.2rem;">
+                    <li>✔️ Profundizar en <strong>JavaScript</strong>: funciones, eventos, manipulación del DOM y localStorage.</li>
+                    <li>✔️ Montar un pequeño proyecto que guarde datos reales en localStorage y los recupere al iniciar.</li>
+                    <li>✔️ Explorar el temario del ciclo medio (montaje de equipos, sistemas operativos, redes) para hacer ejercicios adelantados.</li>
+                    <li>✔️ Seguir usando GitHub + Pages para alojar todas las prácticas y crear un portfolio web.</li>
+                    <li>✔️ Introducción a <strong>Git desde terminal</strong> (más adelante) para aprender comandos básicos: git add, git commit, git push.</li>
+                    <li>✔️ Comparar almacenamiento: localStorage vs sessionStorage vs bases de datos simples en el futuro.</li>
+                </ul>
+                <p style="margin-top: 0.8rem;">💡 <strong>Objetivo:</strong> que los conceptos que estamos viendo ahora sirvan de base sólida para las asignaturas del grado medio de informática.</p>
+            </div>
+        </div>
+
+        <!-- 6. Glosario rápido de los términos nuevos -->
+        <div class="section">
+            <div class="section-title">📖 Mini glosario (recordatorio)</div>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 0.5rem;">
+                <span class="badge" style="background:#eef2ff; color:#1e4a6e;">HTML</span>
+                <span class="badge" style="background:#eef2ff; color:#1e4a6e;">CSS</span>
+                <span class="badge" style="background:#eef2ff; color:#1e4a6e;">JavaScript</span>
+                <span class="badge" style="background:#eef2ff; color:#1e4a6e;">localStorage</span>
+                <span class="badge" style="background:#eef2ff; color:#1e4a6e;">JSON</span>
+                <span class="badge" style="background:#eef2ff; color:#1e4a6e;">DOM</span>
+                <span class="badge" style="background:#eef2ff; color:#1e4a6e;">Git</span>
+                <span class="badge" style="background:#eef2ff; color:#1e4a6e;">Commit</span>
+                <span class="badge" style="background:#eef2ff; color:#1e4a6e;">Repositorio</span>
+                <span class="badge" style="background:#eef2ff; color:#1e4a6e;">GitHub</span>
+                <span class="badge" style="background:#eef2ff; color:#1e4a6e;">GitHub Pages</span>
+                <span class="badge" style="background:#eef2ff; color:#1e4a6e;">index.html</span>
+                <span class="badge" style="background:#eef2ff; color:#1e4a6e;">Servidor web</span>
+                <span class="badge" style="background:#eef2ff; color:#1e4a6e;">Despliegue</span>
+            </div>
+            <hr>
+            <p style="font-size: 0.9rem; color: #2d4a6a;"><strong>🎯 Nota final:</strong> Esta página web (<span class="highlight">sesion-1.html</span>) sirve como acta viva de nuestra primera sesión. Podemos consultarla, modificarla y ampliarla cuando queramos. ¡Seguimos construyendo!</p>
+        </div>
+    </div>
+    <footer>
+        📍 Primera sesión de apoyo · Próxima cita repasaremos más ejercicios de HTML/JS y empezaremos con temas del ciclo medio.<br>
+        ✨ Guarda este archivo para tener siempre accesible lo que hemos trabajado.
+    </footer>
+</div>
+</body>
+</html>
