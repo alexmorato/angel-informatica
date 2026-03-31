@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Acta - Sesión 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        ul {
+            margin-top: 10px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .concepto {
+            background-color: #eef6ff;
+            padding: 10px;
+            border-left: 4px solid #3498db;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>📝 Acta – Sesión 1 (Introducción a desarrollo web)</h1>
+
+<p><strong>Fecha:</strong> 2026-03-31</p>
+<p><strong>Participantes:</strong> Alex y Angel</p>
+
+<section>
+    <h2>1. Contexto inicial</h2>
+    <p>Se revisó el ciclo formativo que va a cursar: grado medio de microinformática y redes.</p>
+    <p>Se vieron las asignaturas del próximo año.</p>
+    <p><strong>Objetivo:</strong> adelantarse a conceptos y familiarizarse con los contenidos.</p>
+</section>
+
+<section>
+    <h2>2. Revisión de prácticas</h2>
+    <p>Se analizó una web tipo cine con funcionalidades:</p>
+    <ul>
+        <li>Ver cartelera</li>
+        <li>Comprar películas</li>
+        <li>Acceso administrador</li>
+        <li>Añadir nuevas películas</li>
+    </ul>
+
+    <div class="concepto">
+        <strong>🧠 Local Storage</strong>
+        <ul>
+            <li>Espacio de almacenamiento en el navegador</li>
+            <li>Guarda datos de forma persistente</li>
+            <li>Se mantiene tras recargar la página (F5)</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>3. Comportamiento de la web</h2>
+    <ul>
+        <li>Las películas añadidas modificaban el HTML directamente</li>
+        <li>No se guardaban de forma persistente</li>
+        <li>Se perdían al recargar</li>
+    </ul>
+
+    <div class="concepto">
+        <strong>Comparativa</strong>
+        <ul>
+            <li><strong>HTML dinámico:</strong> cambios temporales</li>
+            <li><strong>LocalStorage:</strong> datos persistentes</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>4. Estructura de una página web</h2>
+    <ul>
+        <li><strong>HTML (body):</strong> estructura (div, botones…)</li>
+        <li><strong>CSS (style):</strong> estilos visuales</li>
+        <li><strong>JavaScript (script):</strong> lógica e interactividad</li>
+    </ul>
+</section>
+
+<section>
+    <h2>5. Publicación web</h2>
+    <p>Los archivos HTML en local solo funcionan en ese ordenador.</p>
+    <p>Para que otros puedan acceder, deben estar en un servidor web.</p>
+</section>
+
+<section>
+    <h2>6. Ejercicio con GitHub</h2>
+    <ul>
+        <li>Repositorio: <strong>pruebas</strong></li>
+        <li>Archivo: cine.html</li>
+        <li>Primer commit → despliegue automático</li>
+        <li>Publicación con GitHub Pages</li>
+        <li>Se generó una URL accesible desde internet</li>
+    </ul>
+</section>
+
+<section>
+    <h2>7. index.html</h2>
+    <p>Archivo por defecto de un servidor web.</p>
+    <p>Si no se indica archivo, el navegador busca automáticamente <strong>index.html</strong>.</p>
+</section>
+
+<section>
+    <h2>8. Ejercicio con IA</h2>
+    <ul>
+        <li>Generación de web con contador (10, 30, 60 minutos)</li>
+        <li>Subida como index.html</li>
+        <li>Tiempo de despliegue ~30 segundos</li>
+    </ul>
+</section>
+
+<section>
+    <h2>🎯 Conclusiones</h2>
+    <ul>
+        <li>Buen nivel inicial</li>
+        <li>Primer contacto con conceptos clave</li>
+        <li>Publicación real en internet</li>
+        <li>Uso de herramientas profesionales</li>
+    </ul>
+</section>
+
+<section>
+    <h2>📚 Conceptos aprendidos</h2>
+
+    <div class="concepto">
+        <strong>HTML</strong>
+        <p>Archivo que define la estructura de una web. En local funciona solo en tu ordenador, pero en un servidor web es accesible desde internet.</p>
+    </div>
+
+    <div class="concepto">
+        <strong>JSON</strong>
+        <p>Estructura de datos usada para guardar información (por ejemplo, historial de compras). Puede ser una lista de elementos que luego JavaScript recorre.</p>
+    </div>
+
+    <div class="concepto">
+        <strong>JavaScript</strong>
+        <p>Permite modificar el HTML dinámicamente (añadir elementos como divs) e interactuar con el usuario.</p>
+    </div>
+
+    <div class="concepto">
+        <strong>Repositorio</strong>
+        <p>Carpeta donde se guarda el código de un proyecto.</p>
+    </div>
+
+    <div class="concepto">
+        <strong>Git</strong>
+        <p>Sistema para controlar cambios en el código y subirlos a un repositorio.</p>
+    </div>
+
+    <div class="concepto">
+        <strong>GitHub</strong>
+        <p>Plataforma que permite guardar repositorios en la nube.</p>
+    </div>
+
+    <div class="concepto">
+        <strong>GitHub Pages</strong>
+        <p>Servicio que publica automáticamente tu web en internet.</p>
+    </div>
+
+    <div class="concepto">
+        <strong>Commit</strong>
+        <p>Acción de guardar cambios en un repositorio.</p>
+    </div>
+
+    <div class="concepto">
+        <strong>Local Storage</strong>
+        <p>Almacenamiento del navegador que guarda datos de forma persistente.</p>
+    </div>
+
+</section>
+
+</body>
+</html>
